@@ -74,7 +74,7 @@ class Myaccount::AddressesController < Myaccount::BaseController
   private
 
   def allowed_params
-    params.require(:address).permit(:first_name, :last_name, :address1, :address2, :city, :state_id, :state_name, :zip_code, :default, :billing_default, :country_id)
+    params.require(:address).permit(:first_name, :last_name, :address1, :address2, :city, :state_id, :state_name, :zip_code, :default, :billing_default, :country_id, :phone_number)
   end
 
   def form_info

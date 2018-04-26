@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160813202558) do
+ActiveRecord::Schema.define(version: 20180426141428) do
 
   create_table "accounting_adjustments", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "adjustable_id", null: false
@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(version: 20160813202558) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer "country_id"
+    t.string "phone_number"
     t.index ["addressable_id"], name: "index_addresses_on_addressable_id"
     t.index ["addressable_type"], name: "index_addresses_on_addressable_type"
     t.index ["state_id"], name: "index_addresses_on_state_id"
@@ -667,6 +668,9 @@ ActiveRecord::Schema.define(version: 20160813202558) do
     t.integer "comments_count", default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string "phone_number"
+    t.string "gender"
+    t.date "birth_date"
     t.index ["access_token"], name: "index_users_on_access_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["first_name"], name: "index_users_on_first_name"

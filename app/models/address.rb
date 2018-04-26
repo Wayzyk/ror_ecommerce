@@ -57,6 +57,8 @@ class Address < ApplicationRecord
   validates :zip_code,    :presence => true,       :length => { :minimum => 5, :maximum => 12 }
   before_validation :sanitize_data
 
+  validates :phone_number, :presence => true
+
   attr_accessor :replace_address_id # if you are updating an address set this field.
   before_create :default_to_active
   before_save :replace_address, if: :replace_address_id
