@@ -61,7 +61,7 @@
   <div>
     <h4><strong>Birth date</strong></h4>
     <li>
-      <%= current_user.birth_date %>
+      <%= current_user.birth_date.strftime('%e %b') %>
     </li>
 
     <li>

@@ -39,11 +39,6 @@
           <%= f.text_field :city %>
         </div>
 
-        <div class="field large-2 columns">
-          <%= f.label :phone_number %>
-          <%= f.text_field :phone_number %>
-        </div>
-
       <% if Settings.require_state_in_address %>
         <div class="field large-4 columns">
           <%= f.label    :state_id, "State/Province" %>
@@ -68,6 +63,11 @@
           <%= f.label :zip_code %>
           <%= f.text_field :zip_code %>
         </div>
+      </div>
+
+      <div class="field large-2 columns">
+        <%= f.label :phone_number %>
+        <%= f.text_field :phone_number %>
       </div>
 
 </div>
