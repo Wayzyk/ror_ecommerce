@@ -101,6 +101,5 @@ group :test do
 
 end
 
-gem 'trailblazer-cells'
 gem 'cells-rails'
 gem 'cells-erb'
