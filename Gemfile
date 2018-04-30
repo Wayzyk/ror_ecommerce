@@ -100,3 +100,7 @@ group :test do
   gem "faker"
 
 end
+
+gem 'trailblazer-cells'
+gem 'cells-rails'
+gem 'cells-erb'
